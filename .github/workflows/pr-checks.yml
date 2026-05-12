@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Black
-        run: black --check main.py models.py database.py schemas.py test_main.py
+        run: black --check --diff main.py models.py database.py schemas.py test_main.py
 
       - name: Isort
         run: isort --check-only main.py models.py database.py schemas.py test_main.py
