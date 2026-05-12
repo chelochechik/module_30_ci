@@ -1,0 +1,14 @@
+fastapi
+pydantic
+SQLAlchemy[asyncio]
+aiosqlite
+uvicorn[standard]
+httpx
+black==26.3.1
+flake8
+flake8-bugbear
+flake8-pie
+isort==8.0.1
+mypy
+pytest
+pytest-asyncio
