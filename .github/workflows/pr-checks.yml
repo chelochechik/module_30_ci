@@ -27,7 +27,7 @@ jobs:
         run: black --check --diff main.py models.py database.py schemas.py test_main.py
 
       - name: Isort
-        run: isort --check-only main.py models.py database.py schemas.py test_main.py
+        run: isort --check-only --profile black main.py models.py database.py schemas.py test_main.py
 
       - name: Flake8
         run: flake8 main.py models.py database.py schemas.py test_main.py
